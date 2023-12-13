@@ -1,36 +1,120 @@
-.div-cover{
-  background-image: url("images/dev_python.png");
+h1, h2, h3, h4, h5, a, p{
+  font-family: 'Capriola', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  color: #424242;
+}
+.nav-link{
+  font-weight: bold;
+}
+p{
+  margin: 0;
+}
+html{
+  text-align: center;
+}
+
+#div-cover{
   background-size: cover;
   width: 50vh;
   height: 200px;
 }
+
+#site{
+  background-color: #F4F5F7;
+  height: 80vh;
+}
+
+#name{
+  background-color:#E3DBD0;
+  height: 80vh;
+}
+#qualification{
+  background-color: #F4F5F7;
+  height: 80vh;
+}
+#programming_language{
+  background-color: #E3DBD0;
+  height: 80vh;
+}
+#system{
+  background-color: #F4F5F7;
+  height: 80vh;
+}
 .sys{
   display: flex;
-}
-.link{
-  margin: auto;
+  flex-wrap: wrap;
   text-align: center;
+  gap: 5%;
+  padding: 10%;
 }
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
 body {
-  background: white;
+  background: #E3DBD0;
 }
 .hidden {
   opacity:0;
 }
 .console-container {
   font-family:Khula;
-  font-size:4em;
+  font-size:6em;
   text-align:center;
-  height:200px;
-  width:600px;
-  padding-top: 50px;
-  display:block;
-  /* position:absolute; */
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+  height: 90vh;
+  width:100%;
+  padding-top: 2.5em;
+  background-color: #E3DBD0;  
+}
+
+
+header{
+position: fixed;
+width: 100%;
+z-index: 999;
+background-color: #F4F5F7;
+opacity: 0.8;
+}
+
+.item{
+  width: 100%;
+  height: auto;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .5s;
+}
+
+.item.show{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+img{
+  width: 50px;
+  margin-left: 20px;
+}
+
+.jump{
+  height: 64px;
+  background-color: #F4F5F7;
+
+}
+.jump1{
+  height: 64px;
+  background-color: #E3DBD0;
+}
+
+footer{
+  width: 100%;
+  background-color: #F4F5F7;
+  height: 8vh;
+  padding-top: 2vh;
+}
+
+#site p{
+  text-align: center;
+  margin-left: 50vh;
+  width: 50%;
+}
+
+#name p{
+  text-align: center;
+  margin-left: 50vh;
+  width: 50%;
 }

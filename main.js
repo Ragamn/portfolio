@@ -1,4 +1,4 @@
-consoleText(['Rikis Portfolio'], 'text',['blue']);
+consoleText(['Rikis Portfolio'], 'text',['#344860']);
 
 function consoleText(words, id, colors) {
   let letterCount = 1;
@@ -10,3 +10,13 @@ function consoleText(words, id, colors) {
   letterCount += x;
   }, 120)
 }
+
+window.addEventListener('scroll', function(){
+  const item = document.querySelectorAll('.item');
+  for(let i = 0; i < item.length; i++){
+    var targetTop = item[i].offsetTop;
+    if(window.scrollY + 400 > targetTop){
+      item[i].classList.add('show');
+    }
+  }
+});
